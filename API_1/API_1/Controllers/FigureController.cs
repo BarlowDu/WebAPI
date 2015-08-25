@@ -10,6 +10,7 @@ namespace API_1.Controllers
 {
     public class FigureController : ApiController
     {
+
         public IEnumerable<Figure> GetAll()
         {
             return FigureManager.Figures;
@@ -28,14 +29,14 @@ namespace API_1.Controllers
             return result;
         }
 
-        public IEnumerable<Figure> PutByUrl(string firstName, string lastName)
+        public IEnumerable<Figure> PostByUrl(string firstName, string lastName)
         {
             //Catelyn Tully
             FigureManager.Figures.Add(new Figure(firstName, lastName));
             return FigureManager.Figures;
         }
 
-        public IEnumerable<Figure> PutByUrlModel(Figure figure)
+        public IEnumerable<Figure> PostByUrlModel(Figure figure)
         {
             //Catelyn Tully
             if (figure != null)
@@ -45,8 +46,8 @@ namespace API_1.Controllers
             return FigureManager.Figures;
         }
 
-        [Route("api/Figure/PutByRouteModel/{FirstName}/{LastName}")]
-        public IEnumerable<Figure> PutByRouteModel(Figure figure)
+        [Route("api/Figure/PostByRouteModel/{FirstName}/{LastName}")]
+        public IEnumerable<Figure> PostByRouteModel(Figure figure)
         {
             //Catelyn Tully
             if (figure != null)

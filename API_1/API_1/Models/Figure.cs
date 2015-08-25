@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Http.ModelBinding;
 
 namespace API_1.Models
 {
+    [ModelBinder]
     public class Figure
     {
         public Figure()
