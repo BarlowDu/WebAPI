@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="无实体，状态码HttpActionResult">
+    <Position X="1.302" Y="1.975" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="无实体,重定向&#xD;&#xA;302 Found">
+    <Position X="5.885" Y="1.913" Height="0.896" Width="2.119" />
+  </Comment>
+  <Comment CommentText="有实体">
+    <Position X="10.184" Y="2.186" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="序列化(但可指定状态码)">
+    <Position X="11.095" Y="3.389" Height="0.513" Width="1.7" />
+  </Comment>
+  <Comment CommentText="">
+    <Position X="10.74" Y="5.411" Height="0.477" Width="1.7" />
+  </Comment>
+  <Comment CommentText="包含错误信息">
+    <Position X="10.467" Y="7.324" Height="0.531" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Json序列化">
+    <Position X="10.084" Y="9.984" Height="0.477" Width="1.7" />
+  </Comment>
+  <Class Name="API_3.Models.Clone.CodeStatusResult">
+    <Position X="0.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.BadRequestResult">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.RedirectResult">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.FormattedContentResult&lt;T&gt;">
+    <Position X="10.25" Y="4.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.NegotiatedContentResult&lt;T&gt;">
+    <Position X="13.75" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.OkNegotiatedContentResult&lt;T&gt;">
+    <Position X="14" Y="6.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.ExceptionResult">
+    <Position X="10" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.BadRequestErrorMessageResult">
+    <Position X="12.25" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.InvalidModelStateResult">
+    <Position X="15.5" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.CreatedNegotiatedContentResult&lt;T&gt;">
+    <Position X="10" Y="6.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.CreatedAtRouteNegotiatedContentResult&lt;T&gt;">
+    <Position X="17.25" Y="6.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.JsonResult&lt;T&gt;">
+    <Position X="9.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="API_3.Models.Clone.RedirectToRouteResult">
+    <Position X="7.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API_3.Models.Clone.OkResult">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API_3.Models.Clone.NotFoundResult">
+    <Position X="2.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API_3.Models.Clone.UnAuthorizedResult">
+    <Position X="2.75" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API_3.Models.Clone.ConflictResult">
+    <Position X="2.75" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API_3.Models.Clone.InternalServerErrorResult">
+    <Position X="2.75" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="API_3.Models.Clone.IHttpActionResult">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Clone\HttpActionResult.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
