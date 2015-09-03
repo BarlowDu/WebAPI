@@ -15,7 +15,7 @@ namespace API_3.Models.Controller
 {
     public abstract class ApiController
     {
-        
+        /*
         protected internal virtual InvalidModelStateResult BadRequest(ModelStateDictionary modelState);
  
         protected internal virtual NegotiatedContentResult<T> Content<T>(HttpStatusCode statusCode, T value);
@@ -67,6 +67,6 @@ namespace API_3.Models.Controller
         protected internal virtual UnauthorizedResult Unauthorized(IEnumerable<AuthenticationHeaderValue> challenges);
       
         protected internal UnauthorizedResult Unauthorized(params AuthenticationHeaderValue[] challenges);
-        
+        */
     }
 }

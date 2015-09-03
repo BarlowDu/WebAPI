@@ -270,10 +270,6 @@ namespace API_3.Controllers
             return CreatedAtRoute("DefaultApi", route, FigureManager.Figures);
         }
 
-        public ResponseMessageResult GetResponseMessage()
-        {
-            return ResponseMessage(new HttpResponseMessage() { StatusCode = HttpStatusCode.OK });
-        }
 
         public HttpResponseMessage GetFile()
         {
