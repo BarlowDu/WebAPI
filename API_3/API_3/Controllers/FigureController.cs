@@ -210,7 +210,7 @@ namespace API_3.Controllers
             return Redirect(helper.Link("DefaultApi", route));
         }
 
-         
+
 
         public RedirectToRouteResult GetMethodRedirectToRouteResult()
         {
@@ -225,7 +225,7 @@ namespace API_3.Controllers
         public FormattedContentResult<List<Figure>> GetMehtodFormattedContentResult()
         {
             return Content(HttpStatusCode.OK, FigureManager.Figures,
-                new JsonMediaTypeFormatter(),new MediaTypeHeaderValue("application/json"));
+                new JsonMediaTypeFormatter(), new MediaTypeHeaderValue("application/json"));
         }
 
         public NegotiatedContentResult<List<Figure>> GetMethodNegotiatedContentResult()
@@ -237,7 +237,7 @@ namespace API_3.Controllers
         {
             return Json<IEnumerable<Figure>>(FigureManager.Figures);
 
-           
+
         }
 
         public OkNegotiatedContentResult<List<Figure>> GetMethodOkNegotiatedContentResult()
@@ -270,6 +270,10 @@ namespace API_3.Controllers
             return CreatedAtRoute("DefaultApi", route, FigureManager.Figures);
         }
 
+        public ResponseMessageResult GetResponseMessage()
+        {
+            return ResponseMessage(new HttpResponseMessage() { StatusCode = HttpStatusCode.OK });
+        }
 
         public HttpResponseMessage GetFile()
         {
