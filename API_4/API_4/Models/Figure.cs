@@ -20,7 +20,7 @@ namespace API_4.Models
         public string LastName { get; set; }
 
         //用于复杂类型测试
-        //public Direwolf Direwolf { get; set; }
+        public Direwolf Direwolf { get; set; }
     }
 
 }

@@ -61,7 +61,7 @@ namespace API_4.Controllers
 
         }
 
-        [Route("GetFigureFromRouteAndQueryString/{FirstName}/{LastName}/{Direwolf.Name}/{Direwolf.Color}")]
+        [Route("GetComplexFigureFromRoute/{FirstName}/{LastName}/{Direwolf.Name}/{Direwolf.Color}")]
         public Figure GetComplexFigureFromRoute(Figure figure)
         {
             return figure;
@@ -104,6 +104,11 @@ namespace API_4.Controllers
             return list;
         }
 
+
+        public Dictionary<string, int> GetDictionary([ModelBinder]Dictionary<string, int> dic)
+        {
+            return dic;
+        }
         #endregion
 
 
