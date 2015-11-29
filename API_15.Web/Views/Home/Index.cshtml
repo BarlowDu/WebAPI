@@ -1,0 +1,116 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        th {
+            border: solid 1px #999;
+        }
+
+        td {
+            border: solid 1px #999;
+        }
+    </style>
+    <script src="~/Scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        var tb;
+        var urlBase = "http://localhost:64287/api/Demo/"
+        $(function () {
+            jQuery.support.cors = true;
+            tb = $("#tb>tbody");
+            $("#btnClear").click(function () {
+                tb.html(null);
+
+            });
+
+            $("#btnLocal").click(function () {
+                var data = [{ FirstName: "Eddard", LastName: "Stack" }, { FirstName: "Robb", LastName: "Stack" }];
+                callback(data);
+            });
+
+            $("#btnJsonP").click(function () {
+                $.ajax({
+                    url: urlBase + 'GetFigureByJsonP',
+                    type: "get",
+                    dataType: "jsonp",
+                    jsonp: "callback",
+                    jsonpCallback: "callback",
+                    success: function (data) {
+                        //alert(data);
+                    }
+                });
+            });
+
+            $("#btnNOCors").click(function () {
+                $.ajax({
+                    url: urlBase + 'GetFigureNoCors',
+                    type: "get",
+                    dataType: "json",
+                    success: function (data) {
+                        alert(data);
+                    },
+                    error: function (err) {
+                        alert(err.error);
+                    }
+                });
+            });
+
+            $("#btnCors").click(function () {
+
+                $.ajax({
+                    url: urlBase + 'GetFigureByCors',
+                    type: "get",
+                    dataType: "json",
+                    success: function (data) {
+                        callback(data);
+                    }
+                });
+            });
+
+        });
+
+        function callback(data) {
+            var html = "";
+            for (var i = 0; i < data.length; i++) {
+                var item = data[i];
+                html += "<tr><td>" + item.FirstName + "</td><td>" + item.LastName + "</td></tr>";
+            }
+
+            tb.append($(html));
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div>
+            <input type="button" value="清除" id="btnClear" />
+            <input type="button" value="本地" id="btnLocal" />
+            <input type="button" value="无Cors" id="btnNOCors" />
+            <input type="button" value="JsonP" id="btnJsonP" />
+            <input type="button" value="Cors" id="btnCors" />
+        </div>
+        <div style="margin-top:20px;">
+            <table style="border-collapse:collapse;" id="tb">
+                <colgroup>
+                    <col style="width:100px;" />
+                    <col style="width:100px;" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+    </div>
+</body>
+</html>

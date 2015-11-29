@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterChannelDemo", "FilterChannelDemo\FilterChannelDemo.csproj", "{8E4BF6BF-D6DD-4EA6-B6D2-D65420FC3E18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_15", "API_15\API_15.csproj", "{FCDAA461-3029-4F22-9576-689063414750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_15.Web", "API_15.Web\API_15.Web.csproj", "{BEEF37DD-23C7-4065-A4FD-84E3BFA6094E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{8E4BF6BF-D6DD-4EA6-B6D2-D65420FC3E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E4BF6BF-D6DD-4EA6-B6D2-D65420FC3E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E4BF6BF-D6DD-4EA6-B6D2-D65420FC3E18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCDAA461-3029-4F22-9576-689063414750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCDAA461-3029-4F22-9576-689063414750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCDAA461-3029-4F22-9576-689063414750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCDAA461-3029-4F22-9576-689063414750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEEF37DD-23C7-4065-A4FD-84E3BFA6094E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEF37DD-23C7-4065-A4FD-84E3BFA6094E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEF37DD-23C7-4065-A4FD-84E3BFA6094E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEF37DD-23C7-4065-A4FD-84E3BFA6094E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
