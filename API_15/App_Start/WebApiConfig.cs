@@ -10,7 +10,7 @@ namespace API_15
         public static void Register(HttpConfiguration config)
         {
             // Web API 配置和服务
-
+            config.EnableCors();
             // Web API 路由
             config.MapHttpAttributeRoutes();
 

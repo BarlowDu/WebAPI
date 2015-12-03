@@ -14,10 +14,10 @@ namespace API_15
         protected void Application_Start()
         {
 
+            GlobalConfiguration.Configuration.EnableCors();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             //GlobalConfiguration.Configuration.Properties["MS_CorsEnabledKey"]=true;
-            GlobalConfiguration.Configuration.EnableCors();
-            GlobalConfiguration.Configuration.MessageHandlers.Add(new CorsMessageHandler( GlobalConfiguration.Configuration));
+            //GlobalConfiguration.Configuration.MessageHandlers.Add(new CorsMessageHandler( GlobalConfiguration.Configuration));
         }
     }
 }
