@@ -28,7 +28,8 @@ namespace API_15.Controllers
             return FigureManager.Figures;
         }
 
-        [EnableCors(origins:"*",headers: "*",methods:"*")]
+        //[EnableCors(origins:"*",headers: "*",methods:"*")]
+        [EnableCors(origins: "http://localhost:64299,http://www.baidu.com", headers: "GET,POST", methods: "*")]
         public IEnumerable<Figure> GetFigureByCors()
         {
             return FigureManager.Figures;
